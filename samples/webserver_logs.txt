@@ -1,0 +1,5 @@
+2025-03-10T10:52:01Z ERROR service-x timeout calling service-y after 5000ms
+2025-03-10T10:52:01Z WARN retrying request (attempt 3/3)
+2025-03-10T10:52:02Z ERROR circuit-breaker OPEN for endpoint /api/v1/devices
+2025-03-10T10:52:03Z ERROR failed to persist event to db: connection timeout
+2025-03-10T10:52:04Z ERROR service-x returned 500 for request /api/v1/devices

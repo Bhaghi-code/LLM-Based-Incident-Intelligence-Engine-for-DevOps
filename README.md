@@ -1,4 +1,5 @@
-# devops-copilot-incident-triage
+# LLM-Powered DevOps Copilot for Incident Triage
+
 **What this is**
 This project is a lightweight AI-powered assistant designed to help on-call engineers quickly understand incidents by analyzing logs or incident text and producing structured summaries, root cause hypotheses, and recommended actions.
 

@@ -37,14 +37,17 @@ All examples in this repo use realistic but synthetic logs inspired by real prod
 Increased 500 errors on /api/v1/devices
 Downstream service timing out
 Circuit breaker activated
+
 **Likely Causes**
 Downstream service outage
 Network connectivity issues
 Database connection pool exhaustion
+
 **Next Actions**
 Check health of downstream service
 Validate network latency and errors
 Inspect DB connection limits
+
 **Incident Ticket Draft**
 Title: Device API failures due to downstream timeouts
 Description: Errors began spiking at 10:52 UTC due to repeated request failures

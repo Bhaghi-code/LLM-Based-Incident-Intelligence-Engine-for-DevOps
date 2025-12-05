@@ -65,3 +65,19 @@ Log ingestion from files or paste input
 JSON output format
 Jira integration
 API-based deployment
+
+**Architecture Overview**
+This application follows a lightweight client–server pattern using a local Python backend and a cloud-hosted LLM API.
+```mermaid
+sequenceDiagram
+    participant U as User (Browser)
+    participant S as Streamlit App (Python)
+    participant L as LLM API (OpenAI)
+    
+    U->>S: Upload / Paste logs
+    S->>S: Inject prompt + severity + context
+    S->>L: HTTPS request (logs + prompt)
+    L-->>S: Incident analysis (summary, root cause, actions)
+    S-->>U: Render results in UI (highlighted)
+```
+
